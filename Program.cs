@@ -1,16 +1,10 @@
 ﻿using sorting;
 
-// TODO better output
-var array = RandomArray.Get();
+// Generate And Print Random Array
+var array = Util.GetRandomArray();
+Util.PrintArray(array);
 
-for (int i = 0; i < array.Length; i++) {
-    Console.Write(array[i] + " ");
-}
-Console.WriteLine();
+// Selection Sort
+SelectionSort.Go(array);
 
-var sortedArray = SelectionSort.Go(array);
-
-for (int i = 0; i < sortedArray.Length; i++) {
-    Console.Write(sortedArray[i] + " ");
-}
 Console.WriteLine();
