@@ -27,7 +27,7 @@ public static class Util
         Console.WriteLine();
     }
 
-    public static void Swap(ref int[] array, int i, int j) 
+    public static void Swap(int[] array, int i, int j) 
     {
         int temp = array[i];
         array[i] = array[j];

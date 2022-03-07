@@ -13,7 +13,7 @@ public static class BubbleSort
                 if (array[i] > array[i + 1])
                 {
                     iterationSorted = false;
-                    Util.Swap(ref array, i, i+1);
+                    Util.Swap(array, i, i+1);
                 }
             }
             sorted = iterationSorted;

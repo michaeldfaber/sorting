@@ -7,7 +7,7 @@ public static class SelectionSort
         var start = DateTime.Now;
         for (int i = 0; i < array.Length; i++) {
             var min = GetMinimumIndex(array, i);
-            Util.Swap(ref array, i, min);
+            Util.Swap(array, i, min);
         }
         var end = DateTime.Now;
 
