@@ -7,11 +7,11 @@ public static class SelectionSort
         var start = DateTime.Now;
         for (int i = 0; i < array.Length; i++) {
             var min = GetMinimumIndex(array, i);
-            Swap(ref array, i, min);
+            Util.Swap(ref array, i, min);
         }
         var end = DateTime.Now;
 
-        Console.WriteLine("Selection Sort:\t{0} seconds", end.Subtract(start).TotalSeconds);
+        Console.WriteLine("Selection Sort:\t{0} ms", end.Subtract(start).TotalMilliseconds);
         return array;
     }
 
@@ -27,12 +27,5 @@ public static class SelectionSort
         }
 
         return index;
-    }
-
-    private static void Swap(ref int[] array, int i, int j) 
-    {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
     }
 }
