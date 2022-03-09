@@ -2,7 +2,7 @@ namespace sorting;
 
 public static class SelectionSort 
 {
-    public static int[] Go(int[] array) 
+    public static void Go(int[] array) 
     {
         var start = DateTime.Now;
         for (int i = 0; i < array.Length; i++) {
@@ -12,7 +12,6 @@ public static class SelectionSort
         var end = DateTime.Now;
 
         Console.WriteLine("Selection Sort:\t{0} ms", end.Subtract(start).TotalMilliseconds);
-        return array;
     }
 
     private static int GetMinimumIndex(int[] array, int start) 

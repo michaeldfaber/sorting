@@ -4,9 +4,10 @@
 var array = Util.GetRandomArray();
 Util.PrintArray(array);
 
-SelectionSort.Go((int[])array.Clone());
-BubbleSort.Go((int[])array.Clone());
-// InsertSort.Go((int[])array.Clone());
+SelectionSort.Go(Util.CloneArray(array));
+InsertionSort.Go(Util.CloneArray(array));
+BubbleSort.Go(Util.CloneArray(array));
+
 // MergeSort.Go((int[])array.Clone());
 // QuickSort.Go((int[])array.Clone());
 

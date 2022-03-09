@@ -2,7 +2,7 @@ namespace sorting;
 
 public static class BubbleSort 
 {
-    public static int[] Go(int[] array) 
+    public static void Go(int[] array) 
     {
         var start = DateTime.Now;
         var sorted = false;
@@ -21,7 +21,5 @@ public static class BubbleSort
         var end = DateTime.Now;
 
         Console.WriteLine("Bubble Sort:\t{0} ms", end.Subtract(start).TotalMilliseconds);
-
-        return array;
     }
 }

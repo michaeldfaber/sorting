@@ -15,6 +15,16 @@ public static class Util
         return array;
     }
 
+    public static int[] CloneArray(int[] array) {
+        var newArray = new int[array.Length];
+
+        for (int i = 0; i < array.Length; i++) {
+            newArray[i] = array[i];
+        }
+
+        return newArray;
+    }
+
     public static void PrintArray(int[] array) 
     {
         Console.WriteLine();
